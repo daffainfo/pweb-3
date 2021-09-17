@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Warung Tegal</title>
+    <style>
+        header, section, footer, aside, nav, article, figure, figcaption {
+            display: block;
+        }
+        body {
+            color: #666666;
+            background-color: #f9f8f6;
+            background-image: url(https://www.ppt-backgrounds.net/thumbs/dark-wood-grain-image-templates-backgrounds.jpg);
+            background-position: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            line-height: 1.4em;
+            margin: 0px;
+        }
+        .wrapper {
+            width: 940px;
+            margin: 20px auto 20px auto;
+            border: 2px solid #000000;
+            background-color: #ffffff;
+        }
+        header {
+            background-image: url(https://headerart.weebly.com/uploads/5/7/5/7/5757212/4697981_orig.jpg);
+            height: 160px;
+        }
+        h1 {
+            text-indent: -9999px;
+            width: 940px;
+            height: 130px;
+            margin: 0px;
+        }
+        nav, footer {
+            clear: both;
+            color: #ffffff;
+            background-color: #aeaca8;
+            height: 30px;
+        }
+        nav ul {
+            margin: 0px;
+            padding: 5px 0px 5px 30px;
+        }
+        nav li {
+            display: inline;
+            margin-right: 40px;
+        }
+        nav li a {
+            color: #ffffff;
+        }
+        nav li a:hover {
+            color: #000000
+        }
+        section.courses {
+            float: left;
+            width: 659px;
+            border-right: 1px solid #eeeeee;
+        }
+        article {
+            clear: both;
+            overflow: auto;
+            width: 100%;
+        }
+        hgroup {
+            margin-top: 40px;
+        }
+        figure {
+            float: left;
+            width: 290px;
+            height: 270px;
+            padding: 5px;
+            margin: 20px;
+            border: 1px solid #eeeeee;
+        }
+        figcaption {
+            font-size: 90%;
+            text-align: left;
+            padding-bottom: -500px;
+        }
+        aside {
+            width: 230px;
+            float: left;
+            padding: 0px 0px 0px 20px;
+        }
+        aside section a {
+            display: block;
+            padding: 10px;
+            border-bottom: 1px solid #eeeeee;
+        }
+        aside section a:hover {
+            color: #985d6a;
+            background-color: #efefef;
+        }
+        a {
+            color: #de6581;
+            text-decoration: none;
+        }
+        h1,h2,h3 {
+            font-weight: normal;
+        }
+        h2 {
+            margin: 10px 0px 5px 0px;
+            padding: 0px;
+        }
+        h3 {
+            margin: 0px 0px 10px 0px;
+            color: #de6581;
+        }
+        aside h2{
+            padding: 30px 0px 10px 0px;
+            color: #de6581;
+        }
+        footer {
+            font-size: 80%;
+            padding: 7px 0px 0px 20px;
+        }
+        img {
+            width: 100%;
+        }
+        * {box-sizing:border-box}
+
+        * {box-sizing:border-box}
+
+        /* Slideshow container */
+        .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+        }
+
+        /* Make the images invisible by default */
+        .Containers {
+        display: none;
+        }
+
+        .ContainersImage {
+            display: block;
+        }
+
+        /* forward & Back buttons */
+        .Back, .forward {
+        cursor: pointer;
+        position: absolute;
+        top: 48%;
+        width: auto;
+        margin-top: -23px;
+        padding: 17px;
+        color: grey;
+        font-weight: bold;
+        font-size: 19px;
+        transition: 0.4s ease;
+        border-radius: 0 5px 5px 0;
+        user-select: none;
+        }
+
+        /* Place the "forward button" to the right */
+        .forward {
+        right: 0;
+        border-radius: 4px 0 0 4px;
+        }
+
+        /*when the user hovers,add a black background with some little opacity */
+        .Back:hover, .forward:hover {
+        background-color: rgba(0,0,0,0.8);
+        }
+
+        /* Caption Info */
+        .Info {
+        color: #000000;
+        font-size: 16px;
+        padding: 10px 14px;
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        text-align: center;
+        }
+
+        /* The circles or bullets and indicators */
+        .dots {
+        cursor: pointer;
+        height: 16px;
+        width: 16px;
+        margin: 0 3px;
+        background-color: #acc;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.5s ease;
+        }
+
+        .enable, .dots:hover {
+        background-color: #717161;
+        }
+    </style>
+    <script>
+        var slidePosition = 1;
+        SlideShow(slidePosition);
+
+        function plusSlides(n) {
+            SlideShow(slidePosition += n);
+        }
+
+        function currentSlide(n) {
+            SlideShow(slidePosition = n);
+        }
+
+        function SlideShow(n) {
+            var i;
+            var slides = document.getElementsByClassName("Containers");
+            if (n > slides.length) {slidePosition = 1}
+            if (n < 1) {slidePosition = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slidePosition-1].style.display = "block";
+        } 
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            
+            <h1>Warung Tegal</h1>
+            <nav>
+                <ul>
+                    <li><a href="" class="current">beranda</a></li>
+                    <li><a href="" >daftar masakan</a></li>
+                    <li><a href="" >katering</a></li>
+                    <li><a href="" >tentang</a></li>
+                    <li><a href="" >kontak</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="courses">
+            <h2 style="text-align: center;">Gambar Masakan</h2>
+            <div class="slideshow-container">
+                <div class="Containers ContainersImage">
+                <img src="https://asset.kompas.com/crops/5ege6Dvwyi1MrPdjWXxeCcAozGo=/3x0:700x465/750x500/data/photo/2021/04/14/6076818a1b601.jpg" style="width:100%;">
+                <div class="Info">Soto Ayam</div>
+                </div>
+                <div class="Containers">
+                <img src="https://asset.kompas.com/crops/etxkCgz_0N5ZbdP6YGJScpobPVk=/60x23:959x622/750x500/data/photo/2020/11/05/5fa3f16d9c1cf.jpg" style="width:100%">
+                <div class="Info" style="color: white;">Pecel</div>
+                </div>
+                <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <h2 style="text-align: center;">Postingan</h2>
+            <article>
+                <figure>
+                    <img src="https://asset.kompas.com/crops/5ege6Dvwyi1MrPdjWXxeCcAozGo=/3x0:700x465/750x500/data/photo/2021/04/14/6076818a1b601.jpg" alt="soto"/>
+                    <figcaption>Soto Indonesia</figcaption>
+                </figure>
+                <hgroup>
+                    <h2>Soto Ayam</h2>
+                    <h3>Makanan Berkuah</h3>
+                </hgroup>
+                <p>Soto ayam adalah makan khas Indonesia yang berupa sejenis sup ayam dengan kuah yang berwarna kekuningan.</p>
+            </article>
+            <article>
+                <figure>   
+                    <img src="https://asset.kompas.com/crops/etxkCgz_0N5ZbdP6YGJScpobPVk=/60x23:959x622/750x500/data/photo/2020/11/05/5fa3f16d9c1cf.jpg" alt="pecel"/>
+                    <figcaption>Pecel Indonesia</figcaption>
+                </figure>
+                <hgroup>
+                    <h2>Masakan Pecel</h2>
+                    <h3>Makanan dengan Bumbu Kacang</h3>
+                </hgroup>
+                <p>Pecel adalah makanan yang menggunakan bumbu sambal kacang sebagai bahan utamanya yang dicampur dengan aneka jenis sayuran.</p>
+            </article>
+        </section>
+        <aside>
+            <section class="popular-recipes">
+                <h2>Masakan Populer</h2>
+                <iframe width="230" height="165" src="https://www.youtube.com/embed/6jRoh6IW16Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <a href="">Sayur Sop</a>
+                <a href="">Sayur Asem</a>
+                <a href="">Sayur Lodeh</a>
+                <a href="">Sayur Bayam</a>
+            </section>
+            <section class="contact-details">
+                <h2>Kontak</h2>
+                <p>Warung Tegal <br> di seluruh indonesia</p>
+            </section>
+        </aside>
+        <footer>
+            &copy; 2021 Warung Tegal
+        </footer>
+    </div>
+</body>
+</html>
